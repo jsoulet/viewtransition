@@ -1,0 +1,33 @@
+.toggle {
+  width: 80px;
+  height: 40px;
+  border-radius: 20px;
+  background: rgb(182, 193, 205);
+  display: block;
+  position: relative;
+  box-shadow: 5px 5px 10px rgba(69, 66, 59, 0.679) inset;
+  &:has(.checkbox:checked) {
+    background: gold;
+  }
+  & .checkbox {
+    display: none;
+  }
+}
+
+.toggle:after {
+  view-transition-name: toggle;
+  display: block;
+  content: '';
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: white;
+  top: 5px;
+  left: 5px;
+  position: relative;
+  box-shadow: 2px 2px 5px rgba(108, 100, 77, 0.679);
+
+}
+.toggle:has(.checkbox:checked):after {
+  left: 40px;
+}

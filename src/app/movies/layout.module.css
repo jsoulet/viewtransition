@@ -1,0 +1,14 @@
+.toggleContainer {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+.toggleLabel {
+  color: whitesmoke;
+}
+.movies {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}

@@ -1,0 +1,68 @@
+.movie {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  background-color: rgb(54, 50, 58);
+}
+
+.data {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  color: white
+}
+.title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  color: goldenrod;
+}
+.genres {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: rgb(255, 255, 255, 0.5);
+  margin-bottom: 0.5rem;
+}
+
+.year {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: rgb(255, 255, 255, 0.5);
+  margin-bottom: 0.5rem;
+}
+
+.poster {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0.5rem  0.5rem  0 0;
+}
+.posterContainer {
+  position: relative;
+}
+.posterContainer:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(54, 50, 58,1) 10%, rgba(54, 50, 58,0) 50%);;
+}
+
+.rating {
+  font-size: 1.2rem;
+  font-weight: bold;
+  
+  text-align: right;
+}

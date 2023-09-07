@@ -1,0 +1,81 @@
+.text {
+  font-size: 1.2rem;
+  margin: 0 auto;
+  color: white
+}
+.card {
+  max-width: 100%;
+  width: 800px;
+  background-color: rgb(54, 50, 58);
+  display: flex;
+  border-radius: 0.5rem;
+  justify-content: space-between;
+  color: white;
+  margin: 80px auto 0;
+  overflow: hidden;
+}
+.data {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.title {
+  text-transform: uppercase;
+  color: goldenrod;
+}
+
+.genres {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: rgb(255, 255, 255, 0.5);
+  
+}
+
+.posterContainer {
+  position: relative;
+}
+.posterContainer:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(54, 50, 58,1) 10%, rgba(54, 50, 58,0) 50%);;
+}
+
+.plot {
+  flex-grow: 1;
+  margin: 1rem 0;
+}
+
+.poster {
+  border-radius: 0  0.5rem  0.5rem 0;
+  width: 400px;
+  height: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem
+}
+
+.image {
+  height: 80px;
+  aspect-ratio: 1;
+  object-fit: cover;
+
+}
+
+.rating {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: gold;
+  right: 1rem;
+  bottom: 1rem;
+  position: absolute;
+}

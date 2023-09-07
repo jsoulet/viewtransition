@@ -1,0 +1,39 @@
+body {
+  background: black;
+}
+@keyframes scale-out {
+  to {
+    scale: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes scale-in {
+  from {
+    scale: 0;
+    opacity: 0;
+  }
+  to {
+    scale: 1;
+    opacity: 1;
+  }
+}
+
+
+::view-transition-group(*) {
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+::view-transition-old(*):only-child {
+  animation-duration: 0.5s;
+  animation-name: scale-out;
+}
+
+::view-transition-new(*):only-child {
+  animation-name: scale-in;
+}
+
+::view-transition-group(toggle) {
+  animation-duration: 0.3s;
+  animation-timing-function: linear;
+}
