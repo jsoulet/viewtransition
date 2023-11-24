@@ -17,7 +17,7 @@
 .toggle:after {
   view-transition-name: toggle;
   display: block;
-  content: '';
+  content: "";
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -26,7 +26,6 @@
   left: 5px;
   position: relative;
   box-shadow: 2px 2px 5px rgba(108, 100, 77, 0.679);
-
 }
 .toggle:has(.checkbox:checked):after {
   left: 40px;
